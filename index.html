@@ -1,85 +1,96 @@
 <!DOCTYPE html>
 <html>
-<head><meta 
+<head>
+<title>Dhanush Kumar | Tattoo Artist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;}
+  font-family: 'Montserrat', sans-serif;
+}
 
 body {
-  background-color: #ffffff;  color: white;
+  background-color: #0a0a0a;
+  color: white;
   scroll-behavior: smooth;
 }
 
+/* NAVBAR */
 nav {
   position: fixed;
   width: 100%;
-  padding: 20px 60px;
+  padding: 25px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(10px);
+  background: transparent;
   z-index: 1000;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin-left: 25px;
-  font-size: 14px;
-  letter-spacing: 1px;
+  margin-left: 30px;
+  font-size: 13px;
+  letter-spacing: 2px;
   transition: 0.3s;
 }
 
 nav a:hover {
-  color: #ffffff;
+  color: #aaa;
 }
 
+/* HERO */
 .hero {
   height: 100vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+              url('profile.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.95)),
-              url('IMG_4938.jpg') center/cover no-repeat;
-}
-.hero h1 {
-  font-size: 85px;
-  letter-spacing: 4px;
-  font-weight: 700;
-  color: #ffffff;
-}
-.hero p {
-  margin-top: 15px;
-  color: #bbb;
-  font-size: 18px;
-  letter-spacing: 2px;
 }
 
+.hero h1 {
+  font-size: 90px;
+  letter-spacing: 6px;
+  font-weight: 700;
+  color: white;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #ccc;
+}
+
+/* SECTIONS */
 .section {
-  padding: 120px 10%;
+  padding: 140px 12%;
 }
 
 .section h2 {
-  font-size: 40px;
-  margin-bottom: 40px;
-  letter-spacing: 2px;
+  font-size: 42px;
+  margin-bottom: 60px;
+  letter-spacing: 3px;
 }
 
+/* GALLERY */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 .gallery img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 10px;
   transition: 0.4s ease;
 }
 
@@ -87,17 +98,20 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+/* ABOUT */
 .about {
   max-width: 700px;
-  line-height: 1.6;
-  color: #aaa;
+  line-height: 1.8;
+  color: #bbb;
+  font-size: 16px;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 60px;
-  background: #000;
-  color: #666;
+  padding: 80px;
+  background: black;
+  color: #777;
   font-size: 14px;
 }
 </style>
@@ -108,20 +122,27 @@ footer {
 <nav>
   <div><strong>Dhanush Kumar</strong></div>
   <div>
-    <a href="#portrait">Portrait</a>
-    <a href="#large">Large Work</a>
-    <a href="#script">Script</a>
-    <a href="#healed">Healed</a>
-    <a href="#piercing">Piercing</a>
-    <a href="#contact">Contact</a>
+    <a href="#about">ABOUT</a>
+    <a href="#portrait">PORTRAIT</a>
+    <a href="#large">LARGE WORK</a>
+    <a href="#script">SCRIPT</a>
+    <a href="#healed">HEALED</a>
+    <a href="#piercing">PIERCING</a>
+    <a href="#contact">CONTACT</a>
   </div>
 </nav>
 
 <section class="hero">
   <div>
-    <h1>Dhanush Kumar</h1>
-    <p>Realism • Fine Line 
-    
+    <h1>DHANUSH KUMAR</h1>
+    <p>REALISM • FINE LINE • PORTRAIT SPECIALIST</p>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About</h2>
+  <div class="about">
+    I am a professional tattoo artist based in Kerala, specializing in hyper-realistic portrait and detailed fine line tattoos. Every piece I create is designed with precision, emotion, and long-term vision.
   </div>
 </section>
 
@@ -135,36 +156,36 @@ footer {
 <section id="large" class="section">
   <h2>Large Scale Work</h2>
   <div class="gallery">
-    <!-- Add large work images here -->
+    <!-- Add large work images -->
   </div>
 </section>
 
 <section id="script" class="section">
   <h2>Script & Fine Line</h2>
   <div class="gallery">
-    <!-- Add script images here -->
+    <!-- Add script images -->
   </div>
 </section>
 
 <section id="healed" class="section">
   <h2>Healed Work</h2>
   <div class="gallery">
-    <!-- Add healed images here -->
+    <!-- Add healed images -->
   </div>
 </section>
 
 <section id="piercing" class="section">
   <h2>Piercing</h2>
   <div class="gallery">
-    <!-- Add piercing images here -->
+    <!-- Add piercing images -->
   </div>
 </section>
 
 <section id="contact" class="section">
   <h2>Contact</h2>
   <div class="about">
-    Based in India.<br><br>
-    For bookings & inquiries:<br>
+    Based in Kerala.<br><br>
+    For bookings and inquiries:<br>
     artsydhanu@gmail.com<br><br>
     Instagram: @artys_dhanu
   </div>
